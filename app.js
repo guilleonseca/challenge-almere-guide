@@ -48,7 +48,10 @@ function cardHTML(e) {
   if (hasImg) {
     return `
       <div class="card img-card">
-        <img class="card-img" src="${e.img}" alt="${e.title}" loading="lazy">
+        <a href="${e.img}" target="_blank" rel="noopener" class="img-link">
+          <img class="card-img" src="${e.img}" alt="${e.title}" loading="lazy">
+          <span class="zoom-hint">Tap to view full image ↗</span>
+        </a>
         <div class="body">
           <div class="title">${e.title}</div>
           <div class="loc">${e.detail}</div>
