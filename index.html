@@ -31,13 +31,24 @@
     <button class="tab" data-cat="links">Important Links</button>
   </nav>
 
-  <nav class="day-tabs" id="dayTabs">
-    <button class="day-tab active" data-day="all">All days</button>
-    <button class="day-tab" data-day="Thursday 10 September">Thu 10</button>
-    <button class="day-tab" data-day="Friday 11 September">Fri 11</button>
-    <button class="day-tab" data-day="Saturday 12 September">Sat 12</button>
-    <button class="day-tab" data-day="Sunday 13 September">Sun 13</button>
+  <nav class="sub-tabs" id="dayTabs">
+    <button class="sub-tab active" data-day="all">All days</button>
+    <button class="sub-tab" data-day="Thursday 10 September">Thu 10</button>
+    <button class="sub-tab" data-day="Friday 11 September">Fri 11</button>
+    <button class="sub-tab" data-day="Saturday 12 September">Sat 12</button>
+    <button class="sub-tab" data-day="Sunday 13 September">Sun 13</button>
   </nav>
+
+  <nav class="sub-tabs" id="courseTabs" hidden>
+    <button class="sub-tab active" data-event="all">All</button>
+    <button class="sub-tab" data-event="long">Long Distance</button>
+    <button class="sub-tab" data-event="middle">Middle Distance</button>
+    <button class="sub-tab" data-event="marathon">Marathon</button>
+    <button class="sub-tab" data-event="relay">Relay</button>
+    <button class="sub-tab" data-event="aquabike">Aquabike</button>
+  </nav>
+
+  <div class="search-note" id="searchNote" hidden>Searching everything — clear the search to browse by tab</div>
 
   <main id="results"></main>
 
@@ -50,6 +61,12 @@
     <span>Challenge Almere</span>
     <span id="countLabel">— entries</span>
   </footer>
+</div>
+
+<!-- Image lightbox — opens in-page instead of a new tab -->
+<div id="imgModal" class="img-modal" hidden>
+  <button id="imgModalClose" class="img-modal-close" aria-label="Close">×</button>
+  <img id="imgModalPic" src="" alt="">
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/7.0.0/fuse.min.js"></script>
