@@ -91,7 +91,7 @@ header .sub{
 .tabs{
   display:flex;
   gap:7px;
-  padding:0 22px 16px;
+  padding:0 22px 12px;
   overflow-x:auto;
   scrollbar-width:none;
 }
@@ -115,38 +115,37 @@ header .sub{
   color:var(--navy);
 }
 
-.subfilters{
+.day-tabs{
   display:flex;
   gap:6px;
-  padding:0 22px 10px;
+  padding:0 22px 16px;
   overflow-x:auto;
   scrollbar-width:none;
+  border-top:1px solid rgba(255,255,255,0.08);
+  padding-top:14px;
+  margin:0 22px 16px;
+  padding-left:0;
+  padding-right:0;
 }
-.subfilters::-webkit-scrollbar{ display:none; }
-.pill{
+.day-tabs::-webkit-scrollbar{ display:none; }
+.day-tab{
   flex:none;
-  display:flex;
-  align-items:center;
-  gap:5px;
   font-size:11px;
-  font-weight:700;
-  padding:6px 11px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.02em;
+  padding:6px 12px;
   border-radius:999px;
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.12);
-  color:rgba(255,255,255,0.5);
+  background:transparent;
+  color:rgba(255,255,255,0.45);
+  border:1px solid rgba(255,255,255,0.16);
   cursor:pointer;
   transition:all .15s ease;
 }
-.pill.active{
-  background:rgba(230,72,60,0.16);
-  border-color:var(--red);
+.day-tab.active{
+  background:var(--red);
   color:white;
-}
-.pill-dot{
-  width:7px;height:7px;
-  border-radius:50%;
-  flex:none;
+  border-color:var(--red);
 }
 
 main{
@@ -164,6 +163,21 @@ main{
   display:flex;
   align-items:flex-start;
   gap:12px;
+}
+.card.link-card{
+  text-decoration:none;
+  cursor:pointer;
+  transition:background .15s ease, border-color .15s ease;
+}
+.card.link-card:hover{
+  background:#1A2568;
+  border-color:rgba(255,255,255,0.16);
+}
+.ext-arrow{
+  color:rgba(255,255,255,0.35);
+  font-size:16px;
+  flex:none;
+  margin-top:2px;
 }
 .card .dot{
   width:8px;height:8px;
@@ -200,20 +214,6 @@ main{
   font-weight:700;
   padding:2px 7px;
   border-radius:4px;
-}
-
-.link-card{
-  align-items:center;
-  text-decoration:none;
-  cursor:pointer;
-}
-.link-card .arrow{
-  color:rgba(255,255,255,0.3);
-  font-size:18px;
-  flex:none;
-}
-.link-card:hover{
-  border-color:rgba(255,255,255,0.2);
 }
 
 .empty{
