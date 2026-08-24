@@ -1,11 +1,3 @@
-const COLORS = {
-  elite:    'var(--c-elite)',
-  middle:   'var(--c-middle)',
-  junior:   'var(--c-junior)',
-  general:  'var(--c-general)',
-  marathon: 'var(--c-marathon)',
-};
-
 // Categories whose cards get the collapsible <details> treatment —
 // these tend to have long text, so collapsing keeps the page short.
 const ACCORDION_CATS = new Set(['course', 'venue']);
@@ -51,14 +43,12 @@ async function init() {
 }
 
 function plainCardInner(e) {
-  const dotColor = COLORS[e.tag] || 'var(--c-general)';
   const metaBits = [e.day, e.time].filter(Boolean).join(' · ') || e.category.toUpperCase();
   const isPlaceholder = (e.detail || '').includes('PLACEHOLDER');
   const locLine = e.location && e.location !== '—' ? e.location : (e.detail || '');
   const isLink = !!e.url;
 
   const inner = `
-      <div class="dot" style="background:${dotColor}"></div>
       <div class="body">
         <div class="meta">${metaBits}</div>
         <div class="title">${e.title}</div>
