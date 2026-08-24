@@ -342,6 +342,10 @@ main{
   justify-content:center;
   flex:none;
 }
+.pro-avatar.pro-photo{
+  object-fit:cover;
+  background:var(--navy);
+}
 .pro-sub{
   font-size:11px;
   color:rgba(255,255,255,0.4);
