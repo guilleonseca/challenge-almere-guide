@@ -14,7 +14,7 @@
   <header>
     <div class="tag">Challenge Almere</div>
     <h1>Athlete Guide</h1>
-    <div class="sub">Everything you need, in one place</div>
+    <div class="sub" id="dateSub">Everything you need, in one place</div>
   </header>
 
   <div class="ask">
@@ -28,17 +28,22 @@
     <button class="tab" data-cat="course">Course</button>
     <button class="tab" data-cat="venue">Venue</button>
     <button class="tab" data-cat="expo">Expo &amp; Partners</button>
-    <button class="tab" data-cat="links">Links</button>
+    <button class="tab" data-cat="links">Important Links</button>
   </nav>
 
-  <div class="subfilters" id="dayFilters" hidden></div>
-  <div class="subfilters" id="raceFilters" hidden></div>
+  <nav class="day-tabs" id="dayTabs">
+    <button class="day-tab active" data-day="all">All days</button>
+    <button class="day-tab" data-day="Thursday 10 September">Thu 10</button>
+    <button class="day-tab" data-day="Friday 11 September">Fri 11</button>
+    <button class="day-tab" data-day="Saturday 12 September">Sat 12</button>
+    <button class="day-tab" data-day="Sunday 13 September">Sun 13</button>
+  </nav>
 
   <main id="results"></main>
 
   <div id="emptyState" class="empty" hidden>
     <div class="empty-t">No matches</div>
-    <div class="empty-s">Try a different word, or a different filter above.</div>
+    <div class="empty-s">Try a different word, or browse by tab above.</div>
   </div>
 
   <footer>
