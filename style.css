@@ -326,6 +326,29 @@ main{
   cursor:pointer;
 }
 
+/* ---------- pro athlete cards ---------- */
+.pro-card{
+  align-items:flex-start;
+}
+.pro-avatar{
+  width:48px;height:48px;
+  border-radius:50%;
+  background:linear-gradient(135deg, var(--red), var(--c-marathon));
+  color:white;
+  font-family:'Archivo Black',sans-serif;
+  font-size:15px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:none;
+}
+.pro-sub{
+  font-size:11px;
+  color:rgba(255,255,255,0.4);
+  margin-top:4px;
+  font-style:italic;
+}
+
 .empty{
   padding:60px 22px;
   text-align:center;
