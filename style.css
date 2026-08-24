@@ -177,6 +177,23 @@ main{
   display:block;
   background:rgba(255,255,255,0.05);
 }
+.img-link{
+  position:relative;
+  display:block;
+  text-decoration:none;
+}
+.zoom-hint{
+  position:absolute;
+  bottom:8px;
+  right:10px;
+  background:rgba(11,20,64,0.75);
+  color:white;
+  font-size:10px;
+  font-weight:700;
+  padding:4px 9px;
+  border-radius:999px;
+  backdrop-filter:blur(2px);
+}
 .card.img-card .body{
   padding:14px 16px;
 }
