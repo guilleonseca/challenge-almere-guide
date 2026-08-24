@@ -6,10 +6,15 @@ const COLORS = {
   marathon: 'var(--c-marathon)',
 };
 
+// Categories whose cards get the collapsible <details> treatment —
+// these tend to have long text, so collapsing keeps the page short.
+const ACCORDION_CATS = new Set(['course', 'venue']);
+
 let ALL_ENTRIES = [];
 let fuse = null;
 let activeCat = 'schedule';
 let activeDay = 'all';
+let activeEvent = 'all';
 
 const resultsEl = document.getElementById('results');
 const emptyEl = document.getElementById('emptyState');
@@ -18,6 +23,12 @@ const searchInput = document.getElementById('searchInput');
 const clearBtn = document.getElementById('clearBtn');
 const tabsEl = document.getElementById('tabs');
 const dayTabsEl = document.getElementById('dayTabs');
+const courseTabsEl = document.getElementById('courseTabs');
+const searchNoteEl = document.getElementById('searchNote');
+
+const imgModal = document.getElementById('imgModal');
+const imgModalPic = document.getElementById('imgModalPic');
+const imgModalClose = document.getElementById('imgModalClose');
 
 async function init() {
   try {
@@ -37,28 +48,12 @@ async function init() {
   render();
 }
 
-function cardHTML(e) {
+function plainCardInner(e) {
   const dotColor = COLORS[e.tag] || 'var(--c-general)';
   const metaBits = [e.day, e.time].filter(Boolean).join(' · ') || e.category.toUpperCase();
   const isPlaceholder = (e.detail || '').includes('PLACEHOLDER');
   const locLine = e.location && e.location !== '—' ? e.location : (e.detail || '');
   const isLink = !!e.url;
-  const hasImg = !!e.img;
-
-  if (hasImg) {
-    return `
-      <div class="card img-card">
-        <a href="${e.img}" target="_blank" rel="noopener" class="img-link">
-          <img class="card-img" src="${e.img}" alt="${e.title}" loading="lazy">
-          <span class="zoom-hint">Tap to view full image ↗</span>
-        </a>
-        <div class="body">
-          <div class="title">${e.title}</div>
-          <div class="loc">${e.detail}</div>
-        </div>
-      </div>
-    `;
-  }
 
   const inner = `
       <div class="dot" style="background:${dotColor}"></div>
@@ -76,23 +71,58 @@ function cardHTML(e) {
     : `<div class="card">${inner}</div>`;
 }
 
+function accordionCardHTML(e) {
+  const hasImg = !!e.img;
+  const catLabel = e.category === 'course' ? 'COURSE' : 'VENUE';
+  return `
+    <details class="card acc-card">
+      <summary class="acc-summary">
+        <div class="acc-summary-text">
+          <div class="meta">${catLabel}</div>
+          <div class="title">${e.title}</div>
+        </div>
+        <span class="acc-chevron">⌄</span>
+      </summary>
+      <div class="acc-body">
+        ${hasImg ? `
+          <button type="button" class="img-link acc-img-btn" data-img="${e.img}" data-alt="${e.title}">
+            <img class="card-img" src="${e.img}" alt="${e.title}" loading="lazy">
+            <span class="zoom-hint">Tap to view full image</span>
+          </button>
+        ` : ''}
+        <div class="loc acc-detail">${e.detail}</div>
+      </div>
+    </details>
+  `;
+}
+
+function cardHTML(e) {
+  if (ACCORDION_CATS.has(e.category)) return accordionCardHTML(e);
+  return plainCardInner(e);
+}
+
 function render() {
   const query = searchInput.value.trim();
   clearBtn.hidden = query.length === 0;
+  searchNoteEl.hidden = query.length === 0;
 
-  dayTabsEl.hidden = activeCat !== 'schedule';
+  // Sub-nav rows only make sense when NOT searching (search spans everything).
+  dayTabsEl.hidden = query.length > 0 || activeCat !== 'schedule';
+  courseTabsEl.hidden = query.length > 0 || activeCat !== 'course';
 
   let list;
+
   if (query) {
+    // Search overrides tab/day/event filtering entirely — search the whole guide.
     list = fuse.search(query).map(r => r.item);
   } else {
-    list = ALL_ENTRIES;
-  }
-
-  list = list.filter(e => e.category === activeCat);
-
-  if (activeCat === 'schedule' && activeDay !== 'all') {
-    list = list.filter(e => e.day === activeDay);
+    list = ALL_ENTRIES.filter(e => e.category === activeCat);
+    if (activeCat === 'schedule' && activeDay !== 'all') {
+      list = list.filter(e => e.day === activeDay);
+    }
+    if (activeCat === 'course' && activeEvent !== 'all') {
+      list = list.filter(e => e.event === activeEvent);
+    }
   }
 
   countEl.textContent = `${list.length} ${list.length === 1 ? 'entry' : 'entries'}`;
@@ -106,6 +136,7 @@ function render() {
   resultsEl.innerHTML = list.map(cardHTML).join('');
 }
 
+// ---------- search ----------
 searchInput.addEventListener('input', render);
 clearBtn.addEventListener('click', () => {
   searchInput.value = '';
@@ -113,25 +144,71 @@ clearBtn.addEventListener('click', () => {
   searchInput.focus();
 });
 
+// ---------- main tabs ----------
 tabsEl.addEventListener('click', (e) => {
   const btn = e.target.closest('.tab');
   if (!btn) return;
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('#tabs .tab').forEach(t => t.classList.remove('active'));
   btn.classList.add('active');
   activeCat = btn.dataset.cat;
   activeDay = 'all';
-  document.querySelectorAll('.day-tab').forEach(t => t.classList.remove('active'));
+  activeEvent = 'all';
   dayTabsEl.querySelector('[data-day="all"]').classList.add('active');
+  document.querySelectorAll('#dayTabs .sub-tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.day === 'all');
+  });
+  document.querySelectorAll('#courseTabs .sub-tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.event === 'all');
+  });
+  searchInput.value = '';
   render();
 });
 
+// ---------- day sub-tabs ----------
 dayTabsEl.addEventListener('click', (e) => {
-  const btn = e.target.closest('.day-tab');
+  const btn = e.target.closest('.sub-tab');
   if (!btn) return;
-  document.querySelectorAll('.day-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('#dayTabs .sub-tab').forEach(t => t.classList.remove('active'));
   btn.classList.add('active');
   activeDay = btn.dataset.day;
   render();
+});
+
+// ---------- course event sub-tabs ----------
+courseTabsEl.addEventListener('click', (e) => {
+  const btn = e.target.closest('.sub-tab');
+  if (!btn) return;
+  document.querySelectorAll('#courseTabs .sub-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  activeEvent = btn.dataset.event;
+  render();
+});
+
+// ---------- image lightbox (event delegation, since cards re-render) ----------
+resultsEl.addEventListener('click', (e) => {
+  const btn = e.target.closest('.acc-img-btn');
+  if (!btn) return;
+  e.preventDefault();
+  openImgModal(btn.dataset.img, btn.dataset.alt);
+});
+
+function openImgModal(src, alt) {
+  imgModalPic.src = src;
+  imgModalPic.alt = alt || '';
+  imgModal.hidden = false;
+  document.body.style.overflow = 'hidden';
+}
+function closeImgModal() {
+  imgModal.hidden = true;
+  imgModalPic.src = '';
+  document.body.style.overflow = '';
+}
+imgModalClose.addEventListener('click', closeImgModal);
+imgModal.addEventListener('click', (e) => {
+  if (e.target === imgModal) closeImgModal();
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && !imgModal.hidden) closeImgModal();
 });
 
 init();
