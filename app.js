@@ -15,6 +15,7 @@ let fuse = null;
 let activeCat = 'schedule';
 let activeDay = 'all';
 let activeEvent = 'all';
+let activeGender = 'all';
 
 const resultsEl = document.getElementById('results');
 const emptyEl = document.getElementById('emptyState');
@@ -24,6 +25,7 @@ const clearBtn = document.getElementById('clearBtn');
 const tabsEl = document.getElementById('tabs');
 const dayTabsEl = document.getElementById('dayTabs');
 const courseTabsEl = document.getElementById('courseTabs');
+const genderTabsEl = document.getElementById('genderTabs');
 const searchNoteEl = document.getElementById('searchNote');
 
 const imgModal = document.getElementById('imgModal');
@@ -99,9 +101,12 @@ function accordionCardHTML(e) {
 function proCardHTML(e) {
   const initials = (e.title.match(/[A-Z]/g) || ['?']).slice(0, 2).join('');
   const isPlaceholder = e.title.includes('PLACEHOLDER');
+  const avatar = e.img
+    ? `<img class="pro-avatar pro-photo" src="${e.img}" alt="${e.title}">`
+    : `<div class="pro-avatar">${initials}</div>`;
   return `
     <div class="card pro-card">
-      <div class="pro-avatar">${initials}</div>
+      ${avatar}
       <div class="body">
         <div class="title">${e.title}</div>
         <div class="loc">${e.detail}</div>
@@ -126,6 +131,7 @@ function render() {
   // Sub-nav rows only make sense when NOT searching (search spans everything).
   dayTabsEl.hidden = query.length > 0 || activeCat !== 'schedule';
   courseTabsEl.hidden = query.length > 0 || activeCat !== 'course';
+  genderTabsEl.hidden = query.length > 0 || activeCat !== 'pros';
 
   let list;
 
@@ -139,6 +145,9 @@ function render() {
     }
     if (activeCat === 'course' && activeEvent !== 'all') {
       list = list.filter(e => e.event === activeEvent);
+    }
+    if (activeCat === 'pros' && activeGender !== 'all') {
+      list = list.filter(e => e.gender === activeGender);
     }
   }
 
@@ -170,12 +179,16 @@ tabsEl.addEventListener('click', (e) => {
   activeCat = btn.dataset.cat;
   activeDay = 'all';
   activeEvent = 'all';
+  activeGender = 'all';
   dayTabsEl.querySelector('[data-day="all"]').classList.add('active');
   document.querySelectorAll('#dayTabs .sub-tab').forEach(t => {
     t.classList.toggle('active', t.dataset.day === 'all');
   });
   document.querySelectorAll('#courseTabs .sub-tab').forEach(t => {
     t.classList.toggle('active', t.dataset.event === 'all');
+  });
+  document.querySelectorAll('#genderTabs .sub-tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.gender === 'all');
   });
   searchInput.value = '';
   render();
@@ -198,6 +211,16 @@ courseTabsEl.addEventListener('click', (e) => {
   document.querySelectorAll('#courseTabs .sub-tab').forEach(t => t.classList.remove('active'));
   btn.classList.add('active');
   activeEvent = btn.dataset.event;
+  render();
+});
+
+// ---------- pros gender sub-tabs ----------
+genderTabsEl.addEventListener('click', (e) => {
+  const btn = e.target.closest('.sub-tab');
+  if (!btn) return;
+  document.querySelectorAll('#genderTabs .sub-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  activeGender = btn.dataset.gender;
   render();
 });
 
