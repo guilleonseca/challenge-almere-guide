@@ -164,6 +164,25 @@ main{
   align-items:flex-start;
   gap:12px;
 }
+.card.img-card{
+  flex-direction:column;
+  padding:0;
+  overflow:hidden;
+  gap:0;
+}
+.card-img{
+  width:100%;
+  height:150px;
+  object-fit:cover;
+  display:block;
+  background:rgba(255,255,255,0.05);
+}
+.card.img-card .body{
+  padding:14px 16px;
+}
+.card.img-card .title{
+  margin-bottom:4px;
+}
 .card.link-card{
   text-decoration:none;
   cursor:pointer;
