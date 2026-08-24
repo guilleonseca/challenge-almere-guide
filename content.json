@@ -533,17 +533,24 @@
     "location": "Expo"
   },
   {
-    "id": "a1",
-    "category": "activities",
-    "title": "Carbo Loading Party",
-    "detail": "Open to all athletes",
-    "location": "Theatre"
+    "id": "l1",
+    "category": "links",
+    "title": "Live Tracker",
+    "detail": "[PLACEHOLDER — insert tracker URL]",
+    "url": null
   },
   {
-    "id": "a2",
-    "category": "activities",
-    "title": "Medi-Mere Kids Run",
-    "detail": "500m / 1000m / 2000m",
-    "location": "Esplanade"
+    "id": "l2",
+    "category": "links",
+    "title": "Full Athlete Guide (PDF)",
+    "detail": "[PLACEHOLDER — insert PDF URL]",
+    "url": null
+  },
+  {
+    "id": "l3",
+    "category": "links",
+    "title": "Race Rules",
+    "detail": "[PLACEHOLDER — insert URL]",
+    "url": null
   }
 ]
