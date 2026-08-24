@@ -1,556 +1,72 @@
 [
-  {
-    "id": "s1",
-    "category": "schedule",
-    "day": "Thursday 10 September",
-    "time": "13:00",
-    "title": "Registration & Bike Check-in — Junior Challenge",
-    "location": "Theatre & TA",
-    "tag": "general"
-  },
-  {
-    "id": "s2",
-    "category": "schedule",
-    "day": "Thursday 10 September",
-    "time": "15:00",
-    "title": "Registration — RABO Business / Family & Student Relay",
-    "location": "Theatre",
-    "tag": "general"
-  },
-  {
-    "id": "s3",
-    "category": "schedule",
-    "day": "Thursday 10 September",
-    "time": "15:00",
-    "title": "Registration — Long & Middle Distance",
-    "location": "Theatre",
-    "tag": "general"
-  },
-  {
-    "id": "s4",
-    "category": "schedule",
-    "day": "Thursday 10 September",
-    "time": "15:00",
-    "title": "Registration — Marathon",
-    "location": "Theatre",
-    "tag": "general"
-  },
-  {
-    "id": "s5",
-    "category": "schedule",
-    "day": "Thursday 10 September",
-    "time": "15:30",
-    "title": "Bike check-in — Business & Family Relay",
-    "location": "Theatre & TA",
-    "tag": "general"
-  },
-  {
-    "id": "s6",
-    "category": "schedule",
-    "day": "Thursday 10 September",
-    "time": "15:00",
-    "title": "Start — Junior Challenge (elite junior)",
-    "location": "Esplanade Beach",
-    "tag": "junior"
-  },
-  {
-    "id": "s7",
-    "category": "schedule",
-    "day": "Thursday 10 September",
-    "time": "15:02",
-    "title": "Start — Junior Challenge (rolling start)",
-    "location": "Esplanade Beach",
-    "tag": "junior"
-  },
-  {
-    "id": "s8",
-    "category": "schedule",
-    "day": "Thursday 10 September",
-    "time": "16:30",
-    "title": "Junior Challenge award ceremony",
-    "location": "Stadium",
-    "tag": "junior"
-  },
-  {
-    "id": "s9",
-    "category": "schedule",
-    "day": "Thursday 10 September",
-    "time": "17:00",
-    "title": "Start — RABO Business Relay",
-    "location": "Esplanade Beach",
-    "tag": "junior"
-  },
-  {
-    "id": "s10",
-    "category": "schedule",
-    "day": "Thursday 10 September",
-    "time": "17:02",
-    "title": "Start — Family & Breach Student Relay",
-    "location": "Esplanade Beach",
-    "tag": "junior"
-  },
-  {
-    "id": "s11",
-    "category": "schedule",
-    "day": "Thursday 10 September",
-    "time": "20:30",
-    "title": "Business/Family/Student Relay award ceremony",
-    "location": "Stadium",
-    "tag": "junior"
-  },
-  {
-    "id": "s12",
-    "category": "schedule",
-    "day": "Thursday 10 September",
-    "time": "15:30",
-    "title": "Swimcourse recon",
-    "location": "Esplanade Beach",
-    "tag": "middle"
-  },
-  {
-    "id": "s13",
-    "category": "schedule",
-    "day": "Friday 11 September",
-    "time": "08:30",
-    "title": "Start — Senior & No-Limit Challenge",
-    "location": "Van Rheenen Sport",
-    "tag": "junior"
-  },
-  {
-    "id": "s14",
-    "category": "schedule",
-    "day": "Friday 11 September",
-    "time": "14:30",
-    "title": "Finish — Senior & No-Limit Challenge",
-    "location": "Finish Stadium",
-    "tag": "junior"
-  },
-  {
-    "id": "s15",
-    "category": "schedule",
-    "day": "Friday 11 September",
-    "time": "11:00",
-    "title": "Registration — Long & Middle Distance",
-    "location": "Theatre",
-    "tag": "general"
-  },
-  {
-    "id": "s16",
-    "category": "schedule",
-    "day": "Friday 11 September",
-    "time": "11:00",
-    "title": "Registration — Marathon",
-    "location": "Theatre",
-    "tag": "general"
-  },
-  {
-    "id": "s17",
-    "category": "schedule",
-    "day": "Friday 11 September",
-    "time": "11:00",
-    "title": "Bike check-in — Long & Middle Distance",
-    "location": "Transition Area",
-    "tag": "general"
-  },
-  {
-    "id": "s18",
-    "category": "schedule",
-    "day": "Friday 11 September",
-    "time": "15:30",
-    "title": "Registration — Kidsrun",
-    "location": "Theatre",
-    "tag": "general"
-  },
-  {
-    "id": "s19",
-    "category": "schedule",
-    "day": "Friday 11 September",
-    "time": "20:00",
-    "title": "Registration Long & Middle Distance closes",
-    "location": "Theatre",
-    "tag": "general"
-  },
-  {
-    "id": "s20",
-    "category": "schedule",
-    "day": "Friday 11 September",
-    "time": "20:30",
-    "title": "Transition Area Long & Middle Distance closes",
-    "location": "Transition Area",
-    "tag": "general"
-  },
-  {
-    "id": "s21",
-    "category": "schedule",
-    "day": "Friday 11 September",
-    "time": "15:30",
-    "title": "Registration & uniform check — Elite athletes",
-    "location": "Theatre",
-    "tag": "elite"
-  },
-  {
-    "id": "s22",
-    "category": "schedule",
-    "day": "Friday 11 September",
-    "time": "16:00",
-    "title": "Briefing — Elite athletes",
-    "location": "Theatre",
-    "tag": "elite"
-  },
-  {
-    "id": "s23",
-    "category": "schedule",
-    "day": "Friday 11 September",
-    "time": "16:30",
-    "title": "Start — Medi-Mere Kids Run 500m",
-    "location": "Esplanade",
-    "tag": "junior"
-  },
-  {
-    "id": "s24",
-    "category": "schedule",
-    "day": "Friday 11 September",
-    "time": "16:40",
-    "title": "Start — Medi-Mere Kids Run 1000m",
-    "location": "Esplanade",
-    "tag": "junior"
-  },
-  {
-    "id": "s25",
-    "category": "schedule",
-    "day": "Friday 11 September",
-    "time": "17:00",
-    "title": "Start — Medi-Mere Kids Run 2000m",
-    "location": "Esplanade",
-    "tag": "junior"
-  },
-  {
-    "id": "s26",
-    "category": "schedule",
-    "day": "Friday 11 September",
-    "time": "17:30",
-    "title": "Start — Carbo Loading Party",
-    "location": "Theatre",
-    "tag": "junior"
-  },
-  {
-    "id": "s27",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "06:00",
-    "title": "Transition Area open",
-    "location": "Transition Area",
-    "tag": "general"
-  },
-  {
-    "id": "s28",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "07:00",
-    "title": "Last-minute registration & bike check-in — MD only",
-    "location": "Theatre & TA",
-    "tag": "general"
-  },
-  {
-    "id": "s29",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "07:30",
-    "title": "Transition area closes — Long Distance & Aquabike",
-    "location": "Transition Area",
-    "tag": "general"
-  },
-  {
-    "id": "s30",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "10:00",
-    "title": "Transition area closes — Middle Distance & Aquabike",
-    "location": "Transition Area",
-    "tag": "general"
-  },
-  {
-    "id": "s31",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "23:45",
-    "title": "Bike check-out closes",
-    "location": "Transition Area",
-    "tag": "general"
-  },
-  {
-    "id": "s32",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "07:10",
-    "title": "Start — Long Distance, Elite female",
-    "location": "Esplanade Beach",
-    "tag": "elite"
-  },
-  {
-    "id": "s33",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "07:25",
-    "title": "Start — Long Distance, Elite male",
-    "location": "Esplanade Beach",
-    "tag": "elite"
-  },
-  {
-    "id": "s34",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "07:30",
-    "title": "Start — Open Long Distance, Para (AG+Open)",
-    "location": "Esplanade Beach",
-    "tag": "elite"
-  },
-  {
-    "id": "s35",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "07:35",
-    "title": "Start — Long Distance Age-Groups EC",
-    "location": "Esplanade Beach",
-    "tag": "elite"
-  },
-  {
-    "id": "s36",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "07:40",
-    "title": "Start — Long Distance Open, <45",
-    "location": "Esplanade Beach",
-    "tag": "elite"
-  },
-  {
-    "id": "s37",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "07:45",
-    "title": "Start — Long Distance Open, 45+",
-    "location": "Esplanade Beach",
-    "tag": "elite"
-  },
-  {
-    "id": "s38",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "07:50",
-    "title": "Start — Long Distance TriTogether & Aquabike",
-    "location": "Esplanade Beach",
-    "tag": "elite"
-  },
-  {
-    "id": "s39",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "09:50",
-    "title": "Start — Middle Distance & Aquabike (rolling)",
-    "location": "Esplanade Beach",
-    "tag": "middle"
-  },
-  {
-    "id": "s40",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "13:45",
-    "title": "First male finisher — Middle Distance",
-    "location": "Finish Stadium",
-    "tag": "middle"
-  },
-  {
-    "id": "s41",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "14:15",
-    "title": "First female finisher — Middle Distance",
-    "location": "Finish Stadium",
-    "tag": "middle"
-  },
-  {
-    "id": "s42",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "19:20",
-    "title": "Award Ceremony — Middle Distance",
-    "location": "Holland Triathlon House",
-    "tag": "middle"
-  },
-  {
-    "id": "s43",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "14:55",
-    "title": "First finisher — Elite male, LD EC",
-    "location": "Finish Stadium",
-    "tag": "elite"
-  },
-  {
-    "id": "s44",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "15:00",
-    "title": "Award Ceremony — LD EC Men (expected)",
-    "location": "Finish Stadium",
-    "tag": "elite"
-  },
-  {
-    "id": "s45",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "15:40",
-    "title": "First finisher — Elite female, LD EC",
-    "location": "Finish Stadium",
-    "tag": "elite"
-  },
-  {
-    "id": "s46",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "16:00",
-    "title": "Award Ceremony — LD EC Women (expected)",
-    "location": "Finish Stadium",
-    "tag": "elite"
-  },
-  {
-    "id": "s47",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "19:00",
-    "title": "Award Ceremony — Dutch Championship LD",
-    "location": "Holland Triathlon House",
-    "tag": "elite"
-  },
-  {
-    "id": "s48",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "19:15",
-    "title": "Joop Visser Cup & Ruud Graman Cup presentation",
-    "location": "Holland Triathlon House",
-    "tag": "elite"
-  },
-  {
-    "id": "s49",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "23:20",
-    "title": "Last finisher",
-    "location": "Finish Stadium",
-    "tag": "elite"
-  },
-  {
-    "id": "s50",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "13:00",
-    "title": "Registration Marathon open",
-    "location": "Holland Triathlon House",
-    "tag": "marathon"
-  },
-  {
-    "id": "s51",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "16:00",
-    "title": "Registration Marathon closes",
-    "location": "Holland Triathlon House",
-    "tag": "marathon"
-  },
-  {
-    "id": "s52",
-    "category": "schedule",
-    "day": "Saturday 12 September",
-    "time": "17:00",
-    "title": "Start — Marathon",
-    "location": "Forum",
-    "tag": "marathon"
-  },
-  {
-    "id": "s53",
-    "category": "schedule",
-    "day": "Sunday 13 September",
-    "time": "11:00",
-    "title": "Award ceremony — LD Elite, EC AG, Dutch AG, Open AG, TriTogether, Aquabike, Anniversary",
-    "location": "Holland Triathlon House",
-    "tag": "elite"
-  },
-  {
-    "id": "c1",
-    "category": "course",
-    "title": "Long Distance course",
-    "detail": "[PLACEHOLDER — insert full route + elevation]",
-    "location": "—"
-  },
-  {
-    "id": "c2",
-    "category": "course",
-    "title": "Middle Distance course",
-    "detail": "[PLACEHOLDER — insert full route + elevation]",
-    "location": "—"
-  },
-  {
-    "id": "c3",
-    "category": "course",
-    "title": "Marathon course",
-    "detail": "[PLACEHOLDER — insert full route]",
-    "location": "—"
-  },
-  {
-    "id": "v1",
-    "category": "venue",
-    "title": "Transition Area",
-    "detail": "[PLACEHOLDER — pin + opening hours]",
-    "location": "Transition Area"
-  },
-  {
-    "id": "v2",
-    "category": "venue",
-    "title": "Bag drop",
-    "detail": "[PLACEHOLDER — pin + hours]",
-    "location": "Theatre"
-  },
-  {
-    "id": "v3",
-    "category": "venue",
-    "title": "Medical",
-    "detail": "[PLACEHOLDER — pin]",
-    "location": "Finish Stadium"
-  },
-  {
-    "id": "e1",
-    "category": "expo",
-    "title": "Cadomotus",
-    "detail": "[PLACEHOLDER — booth number + offer]",
-    "location": "Expo"
-  },
-  {
-    "id": "e2",
-    "category": "expo",
-    "title": "Erdinger",
-    "detail": "[PLACEHOLDER — booth number]",
-    "location": "Expo"
-  },
-  {
-    "id": "l1",
-    "category": "links",
-    "title": "Live Tracker",
-    "detail": "[PLACEHOLDER — insert tracker URL]",
-    "url": null
-  },
-  {
-    "id": "l2",
-    "category": "links",
-    "title": "Full Athlete Guide (PDF)",
-    "detail": "[PLACEHOLDER — insert PDF URL]",
-    "url": null
-  },
-  {
-    "id": "l3",
-    "category": "links",
-    "title": "Race Rules",
-    "detail": "[PLACEHOLDER — insert URL]",
-    "url": null
-  }
+  {"id":"s1","category":"schedule","day":"Thursday 10 September","time":"13:00","title":"Registration & Bike Check-in — Junior Challenge","location":"Theatre & TA","tag":"general"},
+  {"id":"s2","category":"schedule","day":"Thursday 10 September","time":"15:00","title":"Registration — RABO Business / Family & Student Relay","location":"Theatre","tag":"general"},
+  {"id":"s3","category":"schedule","day":"Thursday 10 September","time":"15:00","title":"Registration — Long & Middle Distance","location":"Theatre","tag":"general"},
+  {"id":"s4","category":"schedule","day":"Thursday 10 September","time":"15:00","title":"Registration — Marathon","location":"Theatre","tag":"general"},
+  {"id":"s5","category":"schedule","day":"Thursday 10 September","time":"15:30","title":"Bike check-in — Business & Family Relay","location":"Theatre & TA","tag":"general"},
+  {"id":"s6","category":"schedule","day":"Thursday 10 September","time":"15:00","title":"Start — Junior Challenge (elite junior)","location":"Esplanade Beach","tag":"junior"},
+  {"id":"s7","category":"schedule","day":"Thursday 10 September","time":"15:02","title":"Start — Junior Challenge (rolling start)","location":"Esplanade Beach","tag":"junior"},
+  {"id":"s8","category":"schedule","day":"Thursday 10 September","time":"16:30","title":"Junior Challenge award ceremony","location":"Stadium","tag":"junior"},
+  {"id":"s9","category":"schedule","day":"Thursday 10 September","time":"17:00","title":"Start — RABO Business Relay","location":"Esplanade Beach","tag":"junior"},
+  {"id":"s10","category":"schedule","day":"Thursday 10 September","time":"17:02","title":"Start — Family & Breach Student Relay","location":"Esplanade Beach","tag":"junior"},
+  {"id":"s11","category":"schedule","day":"Thursday 10 September","time":"20:30","title":"Business/Family/Student Relay award ceremony","location":"Stadium","tag":"junior"},
+  {"id":"s12","category":"schedule","day":"Thursday 10 September","time":"15:30","title":"Swimcourse recon","location":"Esplanade Beach","tag":"middle"},
+  {"id":"s13","category":"schedule","day":"Friday 11 September","time":"08:30","title":"Start — Senior & No-Limit Challenge","location":"Van Rheenen Sport","tag":"junior"},
+  {"id":"s14","category":"schedule","day":"Friday 11 September","time":"14:30","title":"Finish — Senior & No-Limit Challenge","location":"Finish Stadium","tag":"junior"},
+  {"id":"s15","category":"schedule","day":"Friday 11 September","time":"11:00","title":"Registration — Long & Middle Distance","location":"Theatre","tag":"general"},
+  {"id":"s16","category":"schedule","day":"Friday 11 September","time":"11:00","title":"Registration — Marathon","location":"Theatre","tag":"general"},
+  {"id":"s17","category":"schedule","day":"Friday 11 September","time":"11:00","title":"Bike check-in — Long & Middle Distance","location":"Transition Area","tag":"general"},
+  {"id":"s18","category":"schedule","day":"Friday 11 September","time":"15:30","title":"Registration — Kidsrun","location":"Theatre","tag":"general"},
+  {"id":"s19","category":"schedule","day":"Friday 11 September","time":"20:00","title":"Registration Long & Middle Distance closes","location":"Theatre","tag":"general"},
+  {"id":"s20","category":"schedule","day":"Friday 11 September","time":"20:30","title":"Transition Area Long & Middle Distance closes","location":"Transition Area","tag":"general"},
+  {"id":"s21","category":"schedule","day":"Friday 11 September","time":"15:30","title":"Registration & uniform check — Elite athletes","location":"Theatre","tag":"elite"},
+  {"id":"s22","category":"schedule","day":"Friday 11 September","time":"16:00","title":"Briefing — Elite athletes","location":"Theatre","tag":"elite"},
+  {"id":"s23","category":"schedule","day":"Friday 11 September","time":"16:30","title":"Start — Medi-Mere Kids Run 500m","location":"Esplanade","tag":"junior"},
+  {"id":"s24","category":"schedule","day":"Friday 11 September","time":"16:40","title":"Start — Medi-Mere Kids Run 1000m","location":"Esplanade","tag":"junior"},
+  {"id":"s25","category":"schedule","day":"Friday 11 September","time":"17:00","title":"Start — Medi-Mere Kids Run 2000m","location":"Esplanade","tag":"junior"},
+  {"id":"s26","category":"schedule","day":"Friday 11 September","time":"17:30","title":"Start — Carbo Loading Party","location":"Theatre","tag":"junior"},
+  {"id":"s27","category":"schedule","day":"Saturday 12 September","time":"06:00","title":"Transition Area open","location":"Transition Area","tag":"general"},
+  {"id":"s28","category":"schedule","day":"Saturday 12 September","time":"07:00","title":"Last-minute registration & bike check-in — MD only","location":"Theatre & TA","tag":"general"},
+  {"id":"s29","category":"schedule","day":"Saturday 12 September","time":"07:30","title":"Transition area closes — Long Distance & Aquabike","location":"Transition Area","tag":"general"},
+  {"id":"s30","category":"schedule","day":"Saturday 12 September","time":"10:00","title":"Transition area closes — Middle Distance & Aquabike","location":"Transition Area","tag":"general"},
+  {"id":"s31","category":"schedule","day":"Saturday 12 September","time":"23:45","title":"Bike check-out closes","location":"Transition Area","tag":"general"},
+  {"id":"s32","category":"schedule","day":"Saturday 12 September","time":"07:10","title":"Start — Long Distance, Elite female","location":"Esplanade Beach","tag":"elite"},
+  {"id":"s33","category":"schedule","day":"Saturday 12 September","time":"07:25","title":"Start — Long Distance, Elite male","location":"Esplanade Beach","tag":"elite"},
+  {"id":"s34","category":"schedule","day":"Saturday 12 September","time":"07:30","title":"Start — Open Long Distance, Para (AG+Open)","location":"Esplanade Beach","tag":"elite"},
+  {"id":"s35","category":"schedule","day":"Saturday 12 September","time":"07:35","title":"Start — Long Distance Age-Groups EC","location":"Esplanade Beach","tag":"elite"},
+  {"id":"s36","category":"schedule","day":"Saturday 12 September","time":"07:40","title":"Start — Long Distance Open, <45","location":"Esplanade Beach","tag":"elite"},
+  {"id":"s37","category":"schedule","day":"Saturday 12 September","time":"07:45","title":"Start — Long Distance Open, 45+","location":"Esplanade Beach","tag":"elite"},
+  {"id":"s38","category":"schedule","day":"Saturday 12 September","time":"07:50","title":"Start — Long Distance TriTogether & Aquabike","location":"Esplanade Beach","tag":"elite"},
+  {"id":"s39","category":"schedule","day":"Saturday 12 September","time":"09:50","title":"Start — Middle Distance & Aquabike (rolling)","location":"Esplanade Beach","tag":"middle"},
+  {"id":"s40","category":"schedule","day":"Saturday 12 September","time":"13:45","title":"First male finisher — Middle Distance","location":"Finish Stadium","tag":"middle"},
+  {"id":"s41","category":"schedule","day":"Saturday 12 September","time":"14:15","title":"First female finisher — Middle Distance","location":"Finish Stadium","tag":"middle"},
+  {"id":"s42","category":"schedule","day":"Saturday 12 September","time":"19:20","title":"Award Ceremony — Middle Distance","location":"Holland Triathlon House","tag":"middle"},
+  {"id":"s43","category":"schedule","day":"Saturday 12 September","time":"14:55","title":"First finisher — Elite male, LD EC","location":"Finish Stadium","tag":"elite"},
+  {"id":"s44","category":"schedule","day":"Saturday 12 September","time":"15:00","title":"Award Ceremony — LD EC Men (expected)","location":"Finish Stadium","tag":"elite"},
+  {"id":"s45","category":"schedule","day":"Saturday 12 September","time":"15:40","title":"First finisher — Elite female, LD EC","location":"Finish Stadium","tag":"elite"},
+  {"id":"s46","category":"schedule","day":"Saturday 12 September","time":"16:00","title":"Award Ceremony — LD EC Women (expected)","location":"Finish Stadium","tag":"elite"},
+  {"id":"s47","category":"schedule","day":"Saturday 12 September","time":"19:00","title":"Award Ceremony — Dutch Championship LD","location":"Holland Triathlon House","tag":"elite"},
+  {"id":"s48","category":"schedule","day":"Saturday 12 September","time":"19:15","title":"Joop Visser Cup & Ruud Graman Cup presentation","location":"Holland Triathlon House","tag":"elite"},
+  {"id":"s49","category":"schedule","day":"Saturday 12 September","time":"23:20","title":"Last finisher","location":"Finish Stadium","tag":"elite"},
+  {"id":"s50","category":"schedule","day":"Saturday 12 September","time":"13:00","title":"Registration Marathon open","location":"Holland Triathlon House","tag":"marathon"},
+  {"id":"s51","category":"schedule","day":"Saturday 12 September","time":"16:00","title":"Registration Marathon closes","location":"Holland Triathlon House","tag":"marathon"},
+  {"id":"s52","category":"schedule","day":"Saturday 12 September","time":"17:00","title":"Start — Marathon","location":"Forum","tag":"marathon"},
+  {"id":"s53","category":"schedule","day":"Sunday 13 September","time":"11:00","title":"Award ceremony — LD Elite, EC AG, Dutch AG, Open AG, TriTogether, Aquabike, Anniversary","location":"Holland Triathlon House","tag":"elite"},
+  {"id":"c0","category":"course","title":"All courses (official hub)","detail":"Every distance, every map, GPX files — the source for all course info","url":"https://challenge-almere.com/race-information/courses/"},
+  {"id":"c1","category":"course","title":"Long Distance","detail":"3.8km swim (2 laps) · 180km bike (2 laps) · 42.2km run","url":"https://challenge-almere.com/races/long-distance/"},
+  {"id":"c2","category":"course","title":"Middle Distance","detail":"1.9km swim (1 lap) · 94km bike (1 lap) · 21.1km run","url":"https://challenge-almere.com/races/middle-distance/"},
+  {"id":"c3","category":"course","title":"Marathon","detail":"42.2km — 4 laps of 10.15km + a short opening loop, 6 aid stations","url":"https://challenge-almere.com/marathon/"},
+  {"id":"c4","category":"course","title":"TriTogether & Aquabike variants","detail":"Relay and aquabike course pages are linked from each distance's own page above","url":"https://challenge-almere.com/race-information/courses/"},
+  {"id":"v1","category":"venue","title":"Start / Finish — Esplanade","detail":"Esplanade Almere, 1315TA — swim, bike and run all start and finish here","url":"https://www.google.com/maps/search/?api=1&query=Esplanade+Almere+1315TA"},
+  {"id":"v2","category":"venue","title":"Transition Area (T1 & T2)","detail":"New for this year — moved to Lumièrepark, ~700m from the Esplanade, for all distances","url":"https://www.google.com/maps/search/?api=1&query=Lumi%C3%A8repark+Almere"},
+  {"id":"v3","category":"venue","title":"Travel & Accommodation","detail":"Hotels, parking, airport transfers — official page","url":"https://challenge-almere.com/race-information/travel-accommodation/"},
+  {"id":"e1","category":"expo","title":"Cadomotus","detail":"45th Anniversary backpack collab — pick up at the Theatre Merchandise Shop"},
+  {"id":"e2","category":"expo","title":"Erdinger Alkoholfrei","detail":"Official recovery drink partner — main stage with DJ sets"},
+  {"id":"e3","category":"expo","title":"Quintana Roo","detail":"Official swim course sponsor"},
+  {"id":"e4","category":"expo","title":"Full partner list","detail":"[PLACEHOLDER — confirm remaining sponsors + booth numbers]"},
+  {"id":"l1","category":"links","title":"Live Tracking","detail":"[PLACEHOLDER — confirm the 2026 tracking link closer to race day]"},
+  {"id":"l2","category":"links","title":"Athlete Briefings","detail":"Elite and Age Group briefing info","url":"https://challenge-almere.com/race-information/briefing/"},
+  {"id":"l3","category":"links","title":"Startlists","detail":"Bib numbers by category","url":"https://challenge-almere.com/startlists/"},
+  {"id":"l4","category":"links","title":"Results","detail":"Live and past results","url":"https://challenge-almere.com/history/past-results/"},
+  {"id":"l5","category":"links","title":"Time Schedule (official)","detail":"The source this app's Schedule tab is built from","url":"https://challenge-almere.com/race-information/time-schedule/"}
 ]
