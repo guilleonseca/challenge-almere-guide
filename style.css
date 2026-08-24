@@ -115,6 +115,40 @@ header .sub{
   color:var(--navy);
 }
 
+.subfilters{
+  display:flex;
+  gap:6px;
+  padding:0 22px 10px;
+  overflow-x:auto;
+  scrollbar-width:none;
+}
+.subfilters::-webkit-scrollbar{ display:none; }
+.pill{
+  flex:none;
+  display:flex;
+  align-items:center;
+  gap:5px;
+  font-size:11px;
+  font-weight:700;
+  padding:6px 11px;
+  border-radius:999px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.12);
+  color:rgba(255,255,255,0.5);
+  cursor:pointer;
+  transition:all .15s ease;
+}
+.pill.active{
+  background:rgba(230,72,60,0.16);
+  border-color:var(--red);
+  color:white;
+}
+.pill-dot{
+  width:7px;height:7px;
+  border-radius:50%;
+  flex:none;
+}
+
 main{
   padding:0 22px;
   display:flex;
@@ -166,6 +200,20 @@ main{
   font-weight:700;
   padding:2px 7px;
   border-radius:4px;
+}
+
+.link-card{
+  align-items:center;
+  text-decoration:none;
+  cursor:pointer;
+}
+.link-card .arrow{
+  color:rgba(255,255,255,0.3);
+  font-size:18px;
+  flex:none;
+}
+.link-card:hover{
+  border-color:rgba(255,255,255,0.2);
 }
 
 .empty{
