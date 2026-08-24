@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Challenge Almere — Athlete Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <header>
+    <div class="tag">Challenge Almere</div>
+    <h1>Athlete Guide</h1>
+    <div class="sub" id="dateSub">Everything you need, in one place</div>
+  </header>
+
+  <div class="ask">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    <input type="text" id="searchInput" placeholder="Ask something — e.g. where's bag drop?" autocomplete="off">
+    <button id="clearBtn" class="clear-btn" hidden>×</button>
+  </div>
+
+  <nav class="tabs" id="tabs">
+    <button class="tab active" data-cat="all">All</button>
+    <button class="tab" data-cat="schedule">Schedule</button>
+    <button class="tab" data-cat="course">Course</button>
+    <button class="tab" data-cat="venue">Venue</button>
+    <button class="tab" data-cat="expo">Expo &amp; Partners</button>
+    <button class="tab" data-cat="activities">Activities</button>
+  </nav>
+
+  <main id="results"></main>
+
+  <div id="emptyState" class="empty" hidden>
+    <div class="empty-t">No matches</div>
+    <div class="empty-s">Try a different word, or browse by tab above.</div>
+  </div>
+
+  <footer>
+    <span>Challenge Almere</span>
+    <span id="countLabel">— entries</span>
+  </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/7.0.0/fuse.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
