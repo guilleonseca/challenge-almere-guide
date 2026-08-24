@@ -96,7 +96,23 @@ function accordionCardHTML(e) {
   `;
 }
 
+function proCardHTML(e) {
+  const initials = (e.title.match(/[A-Z]/g) || ['?']).slice(0, 2).join('');
+  return `
+    <div class="card pro-card">
+      <div class="pro-avatar">${initials}</div>
+      <div class="body">
+        <div class="title">${e.title}</div>
+        <div class="loc">${e.detail}</div>
+        <div class="pro-sub">${e.sub || ''}</div>
+        <div class="placeholder-flag">CONTENT NEEDED</div>
+      </div>
+    </div>
+  `;
+}
+
 function cardHTML(e) {
+  if (e.category === 'pros') return proCardHTML(e);
   if (ACCORDION_CATS.has(e.category)) return accordionCardHTML(e);
   return plainCardInner(e);
 }
