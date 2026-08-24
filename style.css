@@ -36,13 +36,12 @@ header{
   padding:28px 22px 18px;
   color:white;
 }
-header .tag{
-  font-size:10px;
-  font-weight:800;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  color:var(--red);
-  margin-bottom:8px;
+header .logo{
+  display:block;
+  width:240px;
+  max-width:72%;
+  height:auto;
+  margin-bottom:14px;
 }
 header h1{
   font-family:'Archivo Black',sans-serif;
@@ -190,12 +189,6 @@ main{
   font-size:16px;
   flex:none;
   margin-top:2px;
-}
-.card .dot{
-  width:8px;height:8px;
-  border-radius:50%;
-  margin-top:6px;
-  flex:none;
 }
 .card .body{ flex:1; min-width:0; }
 .card .meta{
