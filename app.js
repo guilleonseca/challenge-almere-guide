@@ -43,6 +43,19 @@ function cardHTML(e) {
   const isPlaceholder = (e.detail || '').includes('PLACEHOLDER');
   const locLine = e.location && e.location !== '—' ? e.location : (e.detail || '');
   const isLink = !!e.url;
+  const hasImg = !!e.img;
+
+  if (hasImg) {
+    return `
+      <div class="card img-card">
+        <img class="card-img" src="${e.img}" alt="${e.title}" loading="lazy">
+        <div class="body">
+          <div class="title">${e.title}</div>
+          <div class="loc">${e.detail}</div>
+        </div>
+      </div>
+    `;
+  }
 
   const inner = `
       <div class="dot" style="background:${dotColor}"></div>
